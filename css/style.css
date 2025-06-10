@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+}
+.gallery{
+display: grid;
+grid-template-areas:
+"header header header header header"
+"america america hulk hulk hulk"
+"america america  hulk hulk hulk"
+"panther mantis hulk hulk hulk"
+"iron-man spider-man hulk hulk hulk"
+;
+height: 1500px;
+width: 100%;
+gap: 5px;
+}
+
+h1{
+    width: 100%;
+    height: 50px;
+    background-color: darkslateblue;
+    color: azure;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+     grid-area: header;
+    
+}
+h1:hover{
+    width: 100%;
+    height: 50px;
+    background-color: darkslateblue;
+    color: rgb(182, 164, 29);
+    text-align: center;
+    align-content: center;
+    position: fixed;
+     grid-area: header; 
+     transform: scale(1.1);
+}
+.captain-america{
+background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFymNoE89PCY4cfyFVkThQcb6tpUeQ88nfpk0eUymMxKfZ8KOS8vgM-TIAhxkqvisrNAo7KXE6Nwk5dama5tl0TcYtmfr5htWErtjOeg");
+background-size: cover;
+background-position: top;
+grid-area: america;
+}
+
+
+.iron-man{
+background-image: url("https://davidspell.com/wp-content/uploads/2014/10/IronMan-Avengers.png");
+background-size: cover;
+background-position: top;
+grid-area: iron-man;
+}
+.black-panther{
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOE73g9GoHjBfct3Hfzh_eLMVxSM1Kz_LjgQ&s");
+background-size: cover;
+background-position: top;
+grid-area: panther
+}
+.hulk{
+background-image: url("https://upload.wikimedia.org/wikipedia/ru/3/35/Hulk_Marvel.png");
+background-size: cover;
+background-position: top;
+grid-area: hulk;
+}
+.mantis{
+background-image: url("https://www.actionfigure411.com/marvel/images/mantis-baf-523.jpg");
+background-size: cover;
+background-position: top;
+grid-area: mantis;
+}
+.spider-man{
+background-image: url("https://shop.jazwares.com/cdn/shop/files/JWC2324-SpiderMan-Action4.1-lpr.jpg?v=1721067271");
+background-size: cover;
+background-position: center;
+grid-area: spider-man;
+}
+
+div span{
+    background-color: darkslateblue;
+    height: 20px;
+    color: azure;
+    
+}
+div span:hover{
+    background-color: rgb(11, 5, 48);
+    height: 20px;
+    color: rgb(211, 153, 19);
+    
+}
+.character-card:hover{
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
