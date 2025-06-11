@@ -1,104 +1,187 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-.gallery{
-display: grid;
-grid-template-areas:
-"header header header header header"
-"america america hulk hulk hulk"
-"america america  hulk hulk hulk"
-"panther mantis hulk hulk hulk"
-"iron-man spider-man hulk hulk hulk"
-;
-height: 1500px;
-width: 100%;
-gap: 5px;
+.gallery {
+  display: grid;
+  grid-template-areas:
+    "america america hulk hulk hulk"
+    "america america  hulk hulk hulk"
+    "panther mantis hulk hulk hulk"
+    "iron-man spider-man hulk hulk hulk";
+  height: 1500px;
+  width: 100%;
+  gap: 5px;
 }
-
-h1{
-    width: 100%;
-    height: 50px;
-    background-color: darkslateblue;
-    color: azure;
-    text-align: center;
-    align-content: center;
-    position: fixed;
-     grid-area: header;
-     z-index:2;
-    
-}
-h1:hover{
-    width: 100%;
-    height: 50px;
-    background-color: darkslateblue;
-    color: rgb(182, 164, 29);
-    text-align: center;
-    align-content: center;
-    position: fixed;
-     grid-area: header; 
-     transform: scale(1.1);
-     z-index:2;
-}
-.captain-america{
-background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFymNoE89PCY4cfyFVkThQcb6tpUeQ88nfpk0eUymMxKfZ8KOS8vgM-TIAhxkqvisrNAo7KXE6Nwk5dama5tl0TcYtmfr5htWErtjOeg");
-background-size: cover;
-background-position: top;
-grid-area: america;
-z-index:1;
+header{
+  width: 100%;
+  height: 100px;
+  background-color: darkslateblue;
+  color: azure;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  position: sticky;
+  top:0px;
+  z-index: 20;
+  
 }
 
-
-.iron-man{
-background-image: url("https://davidspell.com/wp-content/uploads/2014/10/IronMan-Avengers.png");
-background-size: cover;
-background-position: top;
-grid-area: iron-man;
-z-index:1;
+h1:hover {
+  
+  color: rgb(182, 164, 29);
+  grid-area: header;
+  z-index: 10;
 }
-.black-panther{
-background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOE73g9GoHjBfct3Hfzh_eLMVxSM1Kz_LjgQ&s");
-background-size: cover;
-background-position: top;
-grid-area: panther;
-z-index:1;
+i{
+  z-index: 20;
 }
-.hulk{
-background-image: url("https://upload.wikimedia.org/wikipedia/ru/3/35/Hulk_Marvel.png");
-background-size: cover;
-background-position: top;
-grid-area: hulk;
-z-index:1;
-}
-.mantis{
-background-image: url("https://www.actionfigure411.com/marvel/images/mantis-baf-523.jpg");
-background-size: cover;
-background-position: top;
-grid-area: mantis;
-z-index:1;
-}
-.spider-man{
-background-image: url("https://shop.jazwares.com/cdn/shop/files/JWC2324-SpiderMan-Action4.1-lpr.jpg?v=1721067271");
-background-size: cover;
-background-position: center;
-grid-area: spider-man;
-z-index:1;
+i:hover{
+   color: rgb(182, 164, 29);
+   z-index: 20;
 }
 
-div span{
-    background-color: darkslateblue;
-    height: 20px;
-    color: azure;
-    
+.captain-america {
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFymNoE89PCY4cfyFVkThQcb6tpUeQ88nfpk0eUymMxKfZ8KOS8vgM-TIAhxkqvisrNAo7KXE6Nwk5dama5tl0TcYtmfr5htWErtjOeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-area: america;
+  z-index: 1;
 }
-div span:hover{
-    background-color: rgb(11, 5, 48);
-    height: 20px;
-    color: rgb(211, 153, 19);
-    
+
+.iron-man {
+  background-image: url("https://davidspell.com/wp-content/uploads/2014/10/IronMan-Avengers.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: iron-man;
+  z-index: 1;
 }
-.character-card:hover{
-    transform: scale(1.03);
-    opacity: 0.8;
-    z-index:1;
+.black-panther {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOE73g9GoHjBfct3Hfzh_eLMVxSM1Kz_LjgQ&s");
+ background-size: contain;
+ background-repeat: no-repeat;
+  background-position: center;
+  grid-area: panther;
+  z-index: 1;
 }
+.hulk {
+  background-image: url("https://upload.wikimedia.org/wikipedia/ru/3/35/Hulk_Marvel.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: hulk;
+  z-index: 1;
+}
+.mantis {
+  background-image: url("https://www.actionfigure411.com/marvel/images/mantis-baf-523.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: mantis;
+  z-index: 1;
+}
+.spider-man {
+  background-image: url("https://shop.jazwares.com/cdn/shop/files/JWC2324-SpiderMan-Action4.1-lpr.jpg?v=1721067271");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: spider-man;
+  z-index: 1;
+}
+
+div span {
+  background-color: darkslateblue;
+  height: 20px;
+  color: azure;
+}
+div span:hover {
+  background-color: rgb(11, 5, 48);
+  height: 20px;
+  color: rgb(211, 153, 19);
+}
+.fa-info{
+  padding: 20px;
+}
+.character-card:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+  z-index: 1;
+}
+h1>i{
+  color: white;
+  z-index: 20;
+
+}
+
+ footer {
+ 
+  height: 50px;
+  background-color: rgb(55, 33, 163);
+ 
+}
+@media (min-width: 1024px) {
+  header {
+    background-color: rgb(55, 33, 163);
+  }
+   .gallery {
+  display: grid;
+  grid-template-areas:
+     "america america hulk hulk "
+    "america america  hulk hulk "
+    "panther mantis hulk hulk "
+    "iron-man spider-man hulk hulk ";
+  height: 300vh;
+  width: 100%;
+  gap: 5px;
+}
+  footer{
+    background-color:rgb(55, 33, 163);
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    background-color: violet;
+  }
+   .gallery {
+  display: grid;
+  grid-template-areas:
+    "america hulk"
+    "panther mantis" 
+    "iron-man spider-man";
+  height: 900vh;
+  width: 100%;
+  gap: 5px;
+}
+footer{
+  background-color: violet;
+}
+}
+  
+ @media (max-width: 768px) {
+  header {
+    background-color: rgb(116, 92, 236);
+  }
+  .gallery {
+  display: grid;
+  grid-template-areas:
+    "america"
+    "hulk"
+    "panther" 
+    "mantis"
+    "iron-man" 
+    "spider-man" ;
+  height: 900vh;
+  width: 100%;
+  gap: 5px;
+}
+ h1 {
+  font-weight: bold;
+  font-size:25px;
+}
+footer{
+   background-color: rgb(116, 92, 236);
+}
+}
+
 
