@@ -108,7 +108,7 @@ div span:hover {
   opacity: 0.8;
   z-index: 1;
 }
-h1>i{
+header>i{
   color: white;
   z-index: 20;
 
